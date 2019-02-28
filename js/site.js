@@ -34,7 +34,7 @@ function update(lastValue,buttons){
 
     console.log('Checking for update');
     $.ajax({
-        url: "https://proxy.hxlstandard.org/data.json?strip-headers=on&filter01=select&select-query01-01=%23date%3E"+lastValue['#date']+"&force=on&url=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1Y_-nGw3_b7zqeF9hlQdzzP2ySOm9wrrGMHvlNy8P3as%2Fedit%23gid%3D0",
+        url: "https://proxy.hxlstandard.org/data.json?strip-headers=on&filter01=select&select-query01-01=%23datetime%3E"+lastValue['#datetime']+"&force=on&url=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1Y_-nGw3_b7zqeF9hlQdzzP2ySOm9wrrGMHvlNy8P3as%2Fedit%23gid%3D0",
         success: function(result){
             if(result.length>1){
                 console.log('update found');
