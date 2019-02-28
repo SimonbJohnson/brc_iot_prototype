@@ -42,7 +42,7 @@ function update(lastValue,buttons){
                 lastValue = result[result.length-1];
                 updateMap(result,buttons);
             }
-            if(stop==false){setTimeout(function(){update(lastValue,buttons)},12000)};
+            if(stop==false){setTimeout(function(){update(lastValue,buttons)},6000)};
         }
     })
 }
